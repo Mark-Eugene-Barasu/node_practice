@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    height: 80%;
+    border: 1px solid #ccc;
+    margin: 1px;
+    font-family:'Courier New', Courier, monospace
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #1a2364;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: right;
+}
+
+footer {
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 1rem 2rem;
+    position: relative;
+    bottom: -282px;
+    width: 100%;
+}
+
+h2 {
+    text-align: left;
+    padding: 0 1rem;
+    font-weight: lighter;
+}
+
+sup {
+    color: red;
+}
+/* 
+input[type="text"]{
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid gray;
+} */
+
+table {
+    border: 1px solid rgb(199, 196, 196);
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 10px;
+}
+
+tr {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+#row1 {    
+    background-color: #dddddd;
+}
+
+.fh {
+    width: 18%;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #d7d7d7;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    border-radius: 2px;
+}
+
+input[placeholder] {
+    color: #999;
+    font-size: 1rem;
+    padding-left: 0.25rem;
+}
+
+    </style>
+</head>
+<body>
+    <header><img width="300px" src="./VFS_Global_Logo.png" alt="vfs_logo"></header>
+    <main>
+        <form action="" method="post">
+
+            <table>
+                <caption>
+                    <h2>ONLINE TRACKING</h2>
+                </caption>
+                <tr id="row1">
+                    <td class="fh"><label for="application_id">AURA Number<sup>*</sup></label></td>
+                    <td><input placeholder="   " type="text" id="application_id" name="application_id" required></td>
+                </tr>
+                <tr>
+                    <td class="fh"><label for="last_name">Last Name<sup style="color: black;">*</sup></label></td>
+                    <td><input placeholder="Last Name" type="text" id="last_name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td class="fh"></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        &copy; VFS Global. All rights reserved.
+    </footer>
+</body>
+</html>
