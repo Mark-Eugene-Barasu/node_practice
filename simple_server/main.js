@@ -3,17 +3,15 @@
 const http = require("http");
 const port = 3000;
 const httpStatus = require("http-status-codes");
+const app = http.createServer()
 
-const app = http.createServer((req, res) => {
-    console.log("Received an incoming request!");
-
+app.on("request", (req, res) => {
     res.writeHead(httpStatus.OK, {
         "Content-Type": "text/html"
     });
     
-    let responseMessage = "<h1>Hello, Universe</h1>";
-    res.write(responseMessage);
-    res.end();
+    let responseMessage = "<h1>This will show on the screen</h1>";
+    res.end(responseMessage);
 
     console.log(`Sent a response: ${responseMessage}`);
 });
